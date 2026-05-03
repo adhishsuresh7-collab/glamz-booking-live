@@ -38,47 +38,47 @@ function Home() {
 
       {/* HERO */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 gradient-blush" />
-        <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-20 md:grid-cols-2 md:py-28">
-          <div>
-            <p className="text-xs uppercase tracking-[0.4em] text-gold">Best Makeup Artist in Malappuram</p>
-            <h1 className="mt-5 font-display text-4xl leading-[1.05] sm:text-5xl md:text-6xl">
-              ALN GLAMZ
-              <br />
-              <span className="gold-text-gradient">Makeover Studio</span>
-            </h1>
-            <p className="mt-6 max-w-md text-base text-muted-foreground">
-              Hi, I'm <span className="text-foreground">Aleena Uvaise</span> — a professional makeup artist in Malappuram.
-              Bridal • Party • Special Occasion Makeup.
+        <div className="absolute inset-0 -z-10 gradient-editorial" />
+        <div className="absolute inset-0 -z-10 opacity-[0.04] [background-image:radial-gradient(oklch(0.2_0_0)_1px,transparent_1px)] [background-size:3px_3px]" />
+        <div className="mx-auto flex max-w-4xl flex-col items-center px-6 py-28 text-center md:py-40">
+          <p className="text-[11px] uppercase tracking-[0.5em] text-gold">Best Makeup Artist in Malappuram</p>
+          <h1 className="mt-8 font-display text-5xl font-medium leading-[1.02] tracking-tight text-foreground sm:text-6xl md:text-7xl lg:text-[5.5rem]">
+            ALN GLAMZ
+            <span className="mt-2 block font-display italic text-foreground/90">Makeover Studio</span>
+          </h1>
+          <div className="mt-10 flex items-center gap-4">
+            <span className="h-px w-12 bg-gold/60" />
+            <p className="font-display text-xl italic tracking-wide gold-text-gradient sm:text-2xl">
+              Aleena Uvaise
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href={waLink("Hi Aleena, I want to book a makeup session.")}
-                target="_blank"
-                rel="noreferrer"
-                className="group inline-flex items-center gap-2 rounded-full gradient-gold px-7 py-3.5 text-sm font-medium tracking-wide text-gold-foreground shadow-luxe transition-transform hover:-translate-y-0.5"
-              >
-                <MessageCircle className="h-4 w-4" /> Book via WhatsApp
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-              </a>
-              <Link to="/gallery" className="text-sm font-medium tracking-wide text-foreground underline-offset-4 hover:underline">
-                View Gallery
-              </Link>
-            </div>
-            <div className="mt-10 flex items-center gap-4">
-              <div className="flex gap-0.5 text-gold">
-                {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
-              </div>
-              <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Trusted by 500+ brides</p>
-            </div>
+            <span className="h-px w-12 bg-gold/60" />
           </div>
-
-          <div className="relative">
-            <Placeholder label="Bridal Editorial" className="aspect-[4/5] shadow-luxe" />
-            <div className="absolute -bottom-6 -left-6 hidden w-44 rounded-2xl border border-border/60 bg-card p-4 shadow-luxe md:block">
-              <p className="font-display text-sm">Aleena Uvaise</p>
-              <p className="text-xs text-muted-foreground">Founder & Lead Artist</p>
+          <p className="mt-8 max-w-xl text-base leading-relaxed text-foreground/70">
+            A personal atelier for bridal, engagement and special‑occasion makeup —
+            crafted with care, precision and a signature editorial finish.
+          </p>
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href={waLink("Hi Aleena, I want to book a makeup session.")}
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center gap-2 rounded-full gradient-gold px-8 py-4 text-sm font-medium tracking-wide text-gold-foreground shadow-luxe transition-transform hover:-translate-y-0.5"
+            >
+              <MessageCircle className="h-4 w-4" /> Book via WhatsApp
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+            </a>
+            <Link
+              to="/gallery"
+              className="inline-flex items-center gap-2 rounded-full border border-foreground/30 bg-transparent px-8 py-4 text-sm font-medium tracking-wide text-foreground transition-colors hover:border-foreground hover:bg-foreground/5"
+            >
+              View Portfolio <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="mt-14 flex items-center gap-4">
+            <div className="flex gap-0.5 text-gold">
+              {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
             </div>
+            <p className="text-[11px] uppercase tracking-[0.3em] text-foreground/60">Trusted by 500+ brides</p>
           </div>
         </div>
       </section>

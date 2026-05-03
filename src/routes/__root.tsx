@@ -32,11 +32,15 @@ export const Route = createRootRoute({
       { title: "ALN Glamz Makeover Studio — Best Makeup Artist in Malappuram" },
       { name: "description", content: "Aleena Uvaise — Professional bridal, party & engagement makeup artist in Malappuram. Book via WhatsApp." },
       { name: "author", content: "Aleena Uvaise" },
-      { property: "og:title", content: "ALN Glamz Makeover Studio — Aleena Uvaise" },
-      { property: "og:description", content: "Best Makeup Artist in Malappuram. Bridal • Party • Engagement." },
+      { property: "og:title", content: "ALN Glamz Makeover Studio — Best Makeup Artist in Malappuram" },
+      { property: "og:description", content: "Aleena Uvaise — Professional bridal, party & engagement makeup artist in Malappuram. Book via WhatsApp." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "ALN Glamz Makeover Studio — Best Makeup Artist in Malappuram" },
+      { name: "twitter:description", content: "Aleena Uvaise — Professional bridal, party & engagement makeup artist in Malappuram. Book via WhatsApp." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6db6927e-d047-4bcb-a807-011a77513e26/id-preview-764c8820--8ba82380-98b5-46cb-ad5b-e31833df45ce.lovable.app-1777821129028.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6db6927e-d047-4bcb-a807-011a77513e26/id-preview-764c8820--8ba82380-98b5-46cb-ad5b-e31833df45ce.lovable.app-1777821129028.png" },
     ],
     links: [
       {

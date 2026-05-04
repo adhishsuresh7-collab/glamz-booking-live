@@ -1,8 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SiteNav } from "@/components/SiteNav";
-import { SiteFooter } from "@/components/SiteFooter";
+import { SiteNav } from "../../components/SiteNav";
+import { SiteFooter } from "../../components/SiteFooter";
 import { Star } from "lucide-react";
-import { waLink } from "@/lib/contact";
+const waLink = (msg: string) =>
+  `https://wa.me/918086706787?text=${encodeURIComponent(msg)}`;
 
 export const Route = createFileRoute("/reviews/")({
   head: () => ({
